@@ -1,0 +1,5 @@
+version: 1
+triage:
+  include:
+    - "src/**/*.js"
+  severity_threshold: low

@@ -1,0 +1,22 @@
+name: SWEny Triage
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run SWEny triage
+        uses: swenyai/sweny@v5
+        with:
+          cloud-url: https://cloud.sweny.ai

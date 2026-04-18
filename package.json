@@ -1,0 +1,9 @@
+{
+  "name": "sweny-e2e-intel-fixture",
+  "version": "1.0.0",
+  "description": "Small fixture for SWEny end-to-end intelligence pipeline test",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
