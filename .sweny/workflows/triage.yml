@@ -15,8 +15,6 @@ nodes:
       Use the github skill's repo-read tools; do NOT open issues or PRs in this node.
     skills:
       - github
-    next:
-      - investigate
   investigate:
     name: Investigate & Classify
     instruction: |
@@ -68,3 +66,6 @@ nodes:
           enum: [critical, high, medium, low]
         recommendation: { type: string }
       required: [findings, novel_count, highest_severity, recommendation]
+edges:
+  - from: gather
+    to: investigate
