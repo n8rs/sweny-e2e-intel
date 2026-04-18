@@ -19,5 +19,5 @@ jobs:
       - name: Run SWEny triage
         uses: swenyai/sweny@v5
         with:
-          cloud-url: https://cloud.sweny.ai
+          workflow: .sweny/workflows/triage.yml
           claude-oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
