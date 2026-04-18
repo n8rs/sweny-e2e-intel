@@ -18,3 +18,6 @@ export async function fetchWithRetry(url, attempts = DEFAULT_ATTEMPTS) {
   }
   throw new Error(`fetchWithRetry failed after ${attempts} attempts: ${url}`);
 }
+
+// e2e intel test: pushed to verify webhook → waitUntil flow fires
+// 2026-04-18T21:50
