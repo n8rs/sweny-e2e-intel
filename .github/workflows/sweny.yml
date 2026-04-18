@@ -14,6 +14,8 @@ permissions:
 jobs:
   triage:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - name: Run SWEny triage
